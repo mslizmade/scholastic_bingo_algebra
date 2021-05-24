@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Caller: Polynomial Bingo</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet"> 
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="bingocaller.css">
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+    <div id="called_p" class="calledp"></div>
+    <a href="javascript:void(0)" class="goback" id="goback" onclick="closeNav()">Go Back</a>
+	</div> <!-- mySidenav -->
+
+	<div class="mainbox" valign="middle">
+	<div id="caller_window" class="polynomialdiv" valign="middle">
+		<h1>polynomial</h1>
+		<p>BINGO!</p>
+	</div></div>
+	<div class="gobutton" id="nextbtn" onclick="nextpolynomial()">
+		Let's Play!
+	</div>
+	<div class="stopbutton" id="donebtn" onmouseover="onhover()" onmouseout="nohover()" onclick="openNav()">
+		End Game
+	</div>
+
+<!-- partial -->
+<script src="shuffle.js"></script>
+<script src="bingocaller.js"></script>
+
+</body>
+</html>

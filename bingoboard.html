@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Polynomial Bingo</title>
+  <link rel="stylesheet" href="bingoboard.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet"> 
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+<html>
+<body onload="newCard()">
+	<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+	<div class="poly">polynomial</div>
+		<table id="bingotable">
+			<tr class="headline">
+				<th>B</th><th>I</th><th>N</th><th>G</th><th>O</th>
+			</tr>
+			<tr>
+				<div><td class="drop-able" id="square0" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td></div>
+				<td id="square1" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square2" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square3" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square4" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+			</tr>
+			<tr>
+				<td id="square5" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square6" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square7" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square8" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square9" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+			</tr>
+			<tr>
+				<td id="square10" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square11" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="squarefree"> FREE</td>
+				<td id="square12" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square13" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+			</tr>
+			<tr>
+				<td id="square14" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square15" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square16" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square17" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square18" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+			</tr>
+			<tr>
+				<td id="square19" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square20" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square21" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square22" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+				<td id="square23" ondrop="drop(event)" ondragover="allowDrop(event)"> &nbsp;</td>
+			</tr>
+		</table>
+	<div class="tokenbox" id="tokenbox">bingo tokens<div class="token" id="token1" draggable="true" ondragstart="drag(event)"><i class="fas fa-certificate"></i></div></div> <!-- icon also seen in globals bingoboard.js-->
+	
+
+<!-- partial -->
+  <script  src="shuffle.js"></script>
+  <script  src="bingoboard.js"></script>
+
+</body>
+</html>

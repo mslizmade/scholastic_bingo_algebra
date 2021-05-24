@@ -1,0 +1,22 @@
+/* globals */
+
+/*body {
+  background-image: url('images/bingobkg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  background-size: contain;
+}*/
+
+.token{
+  font-size: 4rem;
+  color: blue;
+}
+
+.tokenbox{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+}
